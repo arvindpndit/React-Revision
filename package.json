@@ -1,0 +1,22 @@
+{
+  "name": "react-practice",
+  "version": "1.0.0",
+  "description": "This is React Revision ",
+  "main": "App.js",
+  "scripts": {
+    "test": "jest"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/arvindpndit/React-Practice.git"
+  },
+  "author": "Arvind Pandit Prajapati",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/arvindpndit/React-Practice/issues"
+  },
+  "homepage": "https://github.com/arvindpndit/React-Practice#readme",
+  "devDependencies": {
+    "parcel": "^2.8.3"
+  }
+}

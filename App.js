@@ -3,6 +3,7 @@ let heading = React.createElement(
   "h1",
   {
     id: "heading",
+    props: "here we pass the props",
   },
   "Hello Arvind"
 );
