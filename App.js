@@ -3,30 +3,26 @@ import ReactDOM from "react-dom/client";
 
 const root = ReactDOM.createRoot(document.querySelector("#root"));
 
-//JSX => React.createElement => object => HTML(DOM)
-
-//functional component
-const Heading1 = () => {
-  return <h2>this is heading 2</h2>;
+const Navbar = () => {
+  return <div>Navbar</div>;
 };
 
-//react element
-const heading2 = (
-  //JSX
-  <h2 id="heading2" key="2">
-    Heading Two
-  </h2>
-);
+const Body = () => {
+  return <div>Body</div>;
+};
 
-//functional component
-const Heading = () => {
+const Footer = () => {
+  return <div>Footer</div>;
+};
+
+const AppLayout = () => {
   return (
-    <>
-      <h1>Namaste, this is functional component</h1>
-      {heading2}
-      <Heading1 />
-    </>
+    <React.Fragment>
+      <Navbar />
+      <Body />
+      <Footer />
+    </React.Fragment>
   );
 };
 
-root.render(<Heading />);
+root.render(<AppLayout />);
