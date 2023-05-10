@@ -15,12 +15,21 @@ Basic Layout of the application-
 */
 
 const Navbar = () => {
-  return <div>Navbar</div>;
+  return (
+    <div className="flex justify-between items-center py-3 bg-green-50 px-5">
+      <h1 className="text-4xl font-semibold">Food Villa</h1>
+      <div className="flex gap-6">
+        <div>Home</div>
+        <div>Service</div>
+        <div>Cart</div>
+      </div>
+    </div>
+  );
 };
 
 const Body = () => {
   return (
-    <div>
+    <div className="h-screen">
       <RestaurantList />
     </div>
   );
@@ -39,16 +48,20 @@ const RestaurantCard = () => {
 };
 
 const Footer = () => {
-  return <div>Footer</div>;
+  return (
+    <div className="flex justify-center bg-slate-600 py-3 text-white">
+      <div>This is React-Revision by Arvind Pandit</div>
+    </div>
+  );
 };
 
 const AppLayout = () => {
   return (
-    <React.Fragment>
+    <div>
       <Navbar />
       <Body />
       <Footer />
-    </React.Fragment>
+    </div>
   );
 };
 
