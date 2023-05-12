@@ -96,4 +96,26 @@ const RestaurantCard = ({ restaurant }) => {
 
 I got the data from the `cards` array, which I fetched from the Swiggy API.
 
+Now, let's discuss some important concepts in React:
+
+### 1. Config Driven UI
+
+Config-driven UI means that the UI or the frontend is driven by the backend. In other words, the UI updates according to the data sent by the backend. The configuration is defined in the backend and is sent to the frontend. The frontend renders the UI based on this configuration. This approach makes it easier to maintain and update the UI.
+
+### 2. Virtual DOM
+
+Virtual DOM is the representation of our actual DOM. It is required for reconciliation. Reconciliation is the process by which React updates the UI. It involves comparing the current virtual DOM with the previous one and updating the real DOM with the differences. The virtual DOM is a lightweight copy of the actual DOM, and changes made to it are not immediately reflected in the browser. Instead, React batches these changes and updates the actual DOM in an optimized way.
+
+### 3. Props
+
+Props are short for properties. They are passed to the children of a component. Props are used to pass data from the parent component to its children. This allows for more modular and reusable code. Props are immutable, which means they cannot be changed by the component that receives them.
+
+### 4. Reconciliation/Diff Algorithm
+
+Reconciliation is the process by which React updates the UI. It involves comparing the current virtual DOM with the previous one and updating the real DOM with the differences. React uses a diff algorithm to determine what has changed in the virtual DOM. The diff algorithm is a process of comparing two trees and returning the differences between them. The algorithm is optimized to minimize the number of updates to the actual DOM.
+
+### 5. React Fiber
+
+React Fiber is a new core algorithm in React that is responsible for scheduling and rendering updates. It is a reimplementation of the reconciliation algorithm that allows for better performance and more granular control over rendering. React Fiber introduces the concept of priorities, which allows React to prioritize certain updates over others, improving the perceived performance of the application. React Fiber also allows for interruption and resumption of the rendering process, which can help prevent the application from becoming unresponsive.
+
 After working on the application, I realized that my `App.js` file was getting messy, and everything was inside it. So tomorrow, I plan to modularize my code by separating the components and constants files from the `App.js` file. Overall, I'm excited to continue working on my food ordering application using React.
