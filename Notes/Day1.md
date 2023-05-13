@@ -1,6 +1,13 @@
 # Day 1 of revising React
 
-Today, I'm starting my journey to learn React and I'm excited to share my progress with you. Are you excited too? Let's dive in!
+Hello, I'm Arvind Pandit Prajapati, a frontend developer with a passion for React. I am currently on a revision journey to explore the power, beauty, and ability of React.
+
+## Connect with me
+
+- LinkedIn: https://www.linkedin.com/in/arvindpndit/
+- GitHub: https://github.com/arvindpndit
+
+I'm excited to share my progress with you. Let's dive in and explore the world of React together!
 
 ## Creating a "Hello World" Heading
 
