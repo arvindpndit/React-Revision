@@ -19,17 +19,22 @@ To start the revision, follow these steps:
 
 The revision is divided into several parts, each focusing on a different aspect of React development. Here's an overview of what's covered in each part:
 
-### Part 1: Getting Started
+### Part 1: Trailer
 
-In this part, we'll review the basics of React, including how to create components, handle events, and work with state and props. We'll also cover the tools and libraries needed to build React applications, such as Node.js, npm, and Webpack.
+Day 1: Enter in React's World
+Day 2: Parcel is a beast
+Day 3: Don't worry, Babel is here!
+Day 4: Meet our Hero - JSX
+Day 5: Build your App
+Day 6: Let's get Hooked
 
-### Part 2: Advanced React Concepts
+### Part 2: Enjoy The Ride
 
-In this part, we'll dive deeper into the advanced concepts of React, including using Hooks, Context, and Refs. We'll also explore how to optimize React applications for performance and scalability.
+Upcoming...
 
-### Part 3: Building Real-World Applications
+### Part 3: The Endgame
 
-In this part, we'll apply what we've learned to build real-world React applications. We'll start with complex projects, such as a weather app, a social media platform, and an e-commerce site.
+Upcoming...
 
 ## Contributing
 
@@ -38,7 +43,3 @@ If you find any errors or have suggestions for improving this revision, please f
 ## Contact
 
 If you have any questions about this revision or would like to connect with me, you can find me on LinkedIn at [@arvindpndit](https://www.linkedin.com/in/arvindpndit/).
-
-## License
-
-This revision is licensed under the [MIT License](https://opensource.org/licenses/MIT). Feel free to use, modify, and distribute this code as you see fit.
