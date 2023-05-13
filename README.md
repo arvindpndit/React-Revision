@@ -21,12 +21,17 @@ The revision is divided into several parts, each focusing on a different aspect 
 
 ### Part 1: Trailer
 
-Day 1: Enter in React's World
-Day 2: Parcel is a beast
-Day 3: Don't worry, Babel is here!
-Day 4: Meet our Hero - JSX
-Day 5: Build your App
-Day 6: Let's get Hooked
+**Day 1:** *Enter in React's World*
+
+**Day 2:** *Parcel is a beast*
+
+**Day 3:** *Don't worry, Babel is here!*
+
+**Day 4:** *Meet our Hero - JSX*
+
+**Day 5:** *Build your App*
+
+**Day 6:** *Let's get Hooked*
 
 ### Part 2: Enjoy The Ride
 
