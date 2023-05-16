@@ -1,6 +1,6 @@
 import { useState } from "react";
 
-const SearchBar = ({ cards, setNewRestaurant }) => {
+const SearchBar = ({ cards, setFilterRestaurantList }) => {
   const [searchInput, setSearchInput] = useState("");
   const filteredRestaurantList = () => {
     const filteredRestaurantListData = cards.filter((card) =>
@@ -21,14 +21,12 @@ const SearchBar = ({ cards, setNewRestaurant }) => {
       <button
         className="bg-green-200 px-3 py-2"
         onClick={() => {
-          //filter the restaurant list
           const filteredRestaurantListData = filteredRestaurantList(
             searchInput,
             cards
           );
-          //console.log(filteredRestaurantListData);
-          //set the new restaurant data which gets rendered
-          setNewRestaurant(filteredRestaurantListData);
+
+          setFilterRestaurantList(filteredRestaurantListData);
         }}
       >
         Search

@@ -4,9 +4,10 @@ import { cards } from "../constants";
 import { useEffect, useState } from "react";
 
 const Body = () => {
-  const [newRestaurants, setNewRestaurant] = useState(cards);
-  //website loads => initial render => API call => update the ui with the new data
-  //useEffect (callback fn, dependency array)
+  const [newRestaurants, setNewRestaurant] = useState([]);
+  const [filterRestaurantList, setFilterRestaurantList] =
+    useState(newRestaurants);
+
   useEffect(() => {
     getRestaurantList();
   }, []);
@@ -18,6 +19,7 @@ const Body = () => {
       );
       const json = await data.json();
       setNewRestaurant(json?.data?.cards[2]?.data?.data?.cards);
+      setFilterRestaurantList(json?.data?.cards[2]?.data?.data?.cards);
     } catch (e) {
       console.log("error encountered" + { e });
     }
@@ -26,8 +28,11 @@ const Body = () => {
   console.log("render()");
   return (
     <div className="h-full w-9/12 mx-auto">
-      <SearchBar cards={cards} setNewRestaurant={setNewRestaurant} />
-      <RestaurantList cards={newRestaurants} />
+      <SearchBar
+        cards={newRestaurants}
+        setFilterRestaurantList={setFilterRestaurantList}
+      />
+      <RestaurantList cards={filterRestaurantList} />
     </div>
   );
 };
