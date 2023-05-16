@@ -19,18 +19,14 @@ const Navbar = () => {
           {LoggedIn ? (
             <button
               className="px-2 py-1 bg-green-300"
-              onClick={() => {
-                setLoggedIn(false);
-              }}
+              onClick={() => setLoggedIn(false)}
             >
               Login
             </button>
           ) : (
             <button
               className="px-2 py-1 bg-green-300"
-              onClick={() => {
-                setLoggedIn(true);
-              }}
+              onClick={() => setLoggedIn(true)}
             >
               Logout
             </button>
