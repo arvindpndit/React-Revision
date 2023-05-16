@@ -37,7 +37,13 @@ const Body = () => {
         cards={newRestaurants}
         setFilterRestaurantList={setFilterRestaurantList}
       />
-      <RestaurantList cards={filterRestaurantList} />
+      {filterRestaurantList.length === 0 ? (
+        <div className="h-screen flex justify-center items-center">
+          <div>no restaurant found ☹️</div>
+        </div>
+      ) : (
+        <RestaurantList cards={filterRestaurantList} />
+      )}
     </div>
   );
 };

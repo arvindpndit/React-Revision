@@ -12,32 +12,32 @@ To make our code more modular, we need to understand named and default exports.
 
 Let's take an example to understand this:
 
-```
+```javascript
 const NavbarComponent = () => {
   return <div>NavbarComponent</div>;
-}
+};
 
 export default NavbarComponent;
 ```
 
 This is a default export. To import this, we write:
 
-```
+```javascript
 import NavbarComponent from "./components/NavbarComponent";
 ```
 
 For named export, we do:
 
-```
+```javascript
 export const NavbarComponent = () => {
   return <div>NavbarComponent</div>;
-}
+};
 ```
 
 To import this, we write:
 
-```
-import {NavbarComponent} from "./components/NavbarComponent";
+```javascript
+import { NavbarComponent } from "./components/NavbarComponent";
 ```
 
 ## Learning Hooks: useState Hook
@@ -46,19 +46,19 @@ Hooks are basically normal JS functions. Yes, you read it right - hooks are just
 
 `useState` is used to create a state variable. Here's the syntax:
 
-```
+```javascript
 const [name, setName] = useState("Arvind");
 ```
 
 Here, `name` is the state variable and `setName` is a function that `useState` returns. To change the value of the `name` variable, you cannot simply do:
 
-```
+```javascript
 name = "DevArvind";
 ```
 
 To change the state variable `name` to `"DevArvind"`, you need to use the `setName` function, like this:
 
-```
+```javascript
 setName("DevArvind");
 ```
 
@@ -81,7 +81,7 @@ To use this component, simply import it into your React application and pass in 
 
 The component renders a search input field and a search button. Whenever the user types something in the search input field and clicks the search button, the component filters the list of restaurants based on the search input and updates the list of restaurants to be rendered using the `setNewRestaurant` function.
 
-```
+```javascript
 import { useState } from "react";
 
 const SearchBar = ({ cards, setNewRestaurant }) => {
