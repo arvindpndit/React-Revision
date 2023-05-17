@@ -3,19 +3,10 @@ import ReactDOM from "react-dom/client";
 import Navbar from "./components/Navbar";
 import Body from "./components/Body";
 import Footer from "./components/Footer";
+import { createBrowserRouter, RouterProvider } from "react-router-dom";
+import About from "./components/About";
 
 const root = ReactDOM.createRoot(document.querySelector("#root"));
-
-/*
-Basic Layout of the application-
- -AppLayout
-    -Navbar
-    -Body
-      -SearchBar
-      -RestaurantList
-        -RestaurantCard
-    -Footer
-*/
 
 const AppLayout = () => {
   return (
@@ -27,4 +18,15 @@ const AppLayout = () => {
   );
 };
 
-root.render(<AppLayout />);
+const appRoute = createBrowserRouter([
+  {
+    path: "/",
+    element: <AppLayout />,
+  },
+  {
+    path: "/about",
+    element: <About />,
+  },
+]);
+
+root.render(<RouterProvider router={appRoute} />);

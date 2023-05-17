@@ -5,7 +5,7 @@ const RestaurantCard = ({ restaurant }) => {
     <div className="w-72 h-72 border shadow-sm hover:shadow-md p-2">
       <img
         src={
-          "https://res.cloudinary.com/swiggy/image/upload/fl_lossy,f_auto,q_auto,w_508,h_320,c_fill/" +
+          "https://corsproxy.io/?https://res.cloudinary.com/swiggy/image/upload/fl_lossy,f_auto,q_auto,w_508,h_320,c_fill/" +
           cloudinaryImageId
         }
         alt="food"
