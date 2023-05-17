@@ -28,7 +28,6 @@ const Body = () => {
     }
   };
 
-  console.log("render()");
   return showShimmer ? (
     <Shimmer />
   ) : (
