@@ -1,4 +1,5 @@
 import { useState } from "react";
+import { Link } from "react-router-dom";
 
 const userLoggedIn = () => {
   //checking whether the user is logged in or not
@@ -11,10 +12,16 @@ const Navbar = () => {
   return (
     <div className="bg-green-50">
       <div className="flex justify-between items-center py-3 bg-green-50 w-9/12 mx-auto rounded-xl ">
-        <h1 className="text-4xl font-bold text-green-600">FoodZilla</h1>
+        <h1 className="text-4xl font-bold text-green-600">
+          <Link to="/">FoodZilla</Link>
+        </h1>
         <div className="flex gap-6 text-green-700">
-          <div>About</div>
-          <div>Contact</div>
+          <div>
+            <Link to="/about">About</Link>
+          </div>
+          <div>
+            <Link to="/contact">Contact</Link>
+          </div>
           <div>Cart</div>
           {LoggedIn ? (
             <button
