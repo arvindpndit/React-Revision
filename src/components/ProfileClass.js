@@ -8,14 +8,25 @@ class ProfileClass extends React.Component {
     };
     console.log("constructor");
   }
+
+  componentDidMount() {
+    //the best place to call an api
+    //because it is called after render , cool , right???
+    console.log("componentDidMount");
+  }
+  componentDidUpdate() {
+    console.log("componentDidUpdate");
+  }
+  componentWillUnmount() {
+    console.log("componentWillUnmount");
+  }
+
   render() {
     console.log("render");
     return (
       <div>
         <div>This is Class Component</div>
-        <div className="mt-3">
-          Passing Pr ops in class component? this.props
-        </div>
+        <div className="mt-3">Passing Props in class component? this.props</div>
         <div>Name: {this.props.name}</div>
         <div className="mt-3">
           Creating state in class component ? this.state
