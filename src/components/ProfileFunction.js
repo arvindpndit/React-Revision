@@ -1,7 +1,17 @@
-import { useState } from "react";
+import { useState, useEffect } from "react";
 
 const ProfileFunction = (props) => {
   const [name, setName] = useState("Arvind");
+
+  useEffect(() => {
+    const timer = setInterval(() => {
+      console.log("Hello, I'm Arvind");
+    }, 1000);
+
+    return () => {
+      clearInterval(timer);
+    };
+  }, []);
   return (
     <div>
       <div>This is Functional Component</div>

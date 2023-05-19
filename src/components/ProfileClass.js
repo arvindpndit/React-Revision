@@ -11,13 +11,18 @@ class ProfileClass extends React.Component {
 
   componentDidMount() {
     //the best place to call an api
-    //because it is called after render , cool , right???
+    //because it is called after render.
+    this.timer = setInterval(() => {
+      //console.log("Hello, I'm Arvind");
+    }, 1000);
+
     console.log("Child componentDidMount");
   }
   componentDidUpdate() {
     console.log("Child componentDidUpdate");
   }
   componentWillUnmount() {
+    clearInterval(this.timer);
     console.log("Child componentWillUnmount");
   }
 
