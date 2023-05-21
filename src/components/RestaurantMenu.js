@@ -1,12 +1,12 @@
 import { useEffect, useState } from "react";
 import { useParams } from "react-router-dom";
 import RestaurantMenuItem from "./RestaurantMenuItem";
-import useRestaurantList from "../helper/useRestaurantList";
+import useRestaurantMenu from "../helper/useRestaurantMenu";
 
 const RestaurantMenu = () => {
   const param = useParams();
   const { menuId } = param;
-  const restaurantMenuList = useRestaurantList(menuId);
+  const restaurantMenuList = useRestaurantMenu(menuId);
 
   return (
     <div className="min-h-screen w-9/12 mx-auto">
