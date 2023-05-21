@@ -1,13 +1,9 @@
 import { useState } from "react";
+import { filteredRestaurantList } from "../helper/helper";
 
 const SearchBar = ({ cards, setFilterRestaurantList }) => {
   const [searchInput, setSearchInput] = useState("");
-  const filteredRestaurantList = () => {
-    const filteredRestaurantListData = cards.filter((card) =>
-      card.data.name.includes(searchInput)
-    );
-    return filteredRestaurantListData;
-  };
+
   return (
     <div className="text-center mt-3 outline-none ">
       <input
@@ -25,7 +21,6 @@ const SearchBar = ({ cards, setFilterRestaurantList }) => {
             searchInput,
             cards
           );
-
           setFilterRestaurantList(filteredRestaurantListData);
         }}
       >

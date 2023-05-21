@@ -23,8 +23,10 @@ const Body = () => {
       setNewRestaurant(json?.data?.cards[2]?.data?.data?.cards);
       setFilterRestaurantList(json?.data?.cards[2]?.data?.data?.cards);
       setShowShimmer(false);
+      console.log(json);
+      console.log(filterRestaurantList);
     } catch (e) {
-      console.log("error encountered" + { e });
+      console.log("error encountered" + e);
     }
   };
 
@@ -36,7 +38,7 @@ const Body = () => {
         cards={newRestaurants}
         setFilterRestaurantList={setFilterRestaurantList}
       />
-      {filterRestaurantList.length === 0 ? (
+      {filterRestaurantList && filterRestaurantList.length === 0 ? (
         <div className="h-screen flex justify-center items-center">
           <div>no restaurant found ☹️</div>
         </div>
