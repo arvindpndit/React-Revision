@@ -13,7 +13,7 @@ const RestaurantMenu = () => {
       <div className="py-4">This is Restaurant: {menuId}</div>
       {restaurantMenuList &&
         restaurantMenuList.map((card) => {
-          return <RestaurantMenuItem card={card} />;
+          return <RestaurantMenuItem key={card.card.info.id} card={card} />;
         })}
     </div>
   );

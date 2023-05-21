@@ -3,6 +3,7 @@ import SearchBar from "./SearchBar";
 import { cards } from "../constants";
 import { useEffect, useState } from "react";
 import Shimmer from "./Shimmer";
+import useOnline from "../helper/useOnline";
 
 const Body = () => {
   const [showShimmer, setShowShimmer] = useState(true);
@@ -23,12 +24,21 @@ const Body = () => {
       setNewRestaurant(json?.data?.cards[2]?.data?.data?.cards);
       setFilterRestaurantList(json?.data?.cards[2]?.data?.data?.cards);
       setShowShimmer(false);
-      console.log(json);
+
       console.log(filterRestaurantList);
     } catch (e) {
       console.log("error encountered" + e);
     }
   };
+
+  const isOnline = useOnline();
+
+  if (!isOnline)
+    return (
+      <div className="flex items-center justify-center min-h-screen">
+        <div>Offline, please check your internet connection</div>
+      </div>
+    );
 
   return showShimmer ? (
     <Shimmer />
