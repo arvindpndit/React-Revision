@@ -2025,3 +2025,30 @@ export const cards = [
     subtype: "basic",
   },
 ];
+
+export const sectionData = [
+  {
+    title: "About Instamart",
+    id: "1",
+    description:
+      "Lorem ipsum dolor sit amet consectetur adipisicing elit. Porro, maxime eius? Repudiandae, aut quia veniam saepe laborum quisquam accusamus maiores ipsa fuga ex. Quis cum minus vitae expedita ipsum dolor sit amet consectetur adipisicing elit. Porro, maxime eius? Repudiandae, aut quia veniam saepe laborum quisquam accusamus maiores ipsa fuga ex. Quis cum minus vitae expedita nesciunt. Sequi debitis sunt omnis consectetur ex corruptinesciunt. Sequi debitis sunt omnis consectetur ex corrupti quibusdam odio? Mollitia, recusandae?",
+  },
+  {
+    title: "Career",
+    id: "2",
+    description:
+      "Lorem ipsum dolor sit amet consectetur adipisicing elit. Porro, maxime eius? Repudiandae, aut quia veniam saepe laborum quisquam accusamus maiores ipsa fuga ex. Quis cum minus vitae expedita nesciunt. Sequi debitis sunt omnis consectetur ex corrupti quibusdam odio? Mollitia, recusandae?",
+  },
+  {
+    title: "Goal ",
+    id: "3",
+    description:
+      "Lorem ipsum dolor sit amet consectetur adipisicing elit. Porro, maxime eius? Repudiandae, aut quia veniam saepe laborum quisquam accusamus maiores ipsa fuga ex. Quis cum minus vitae ipsum dolor sit amet consectetur adipisicing elit. Porro, maxime eius? Repudiandae, aut quia veniam saepe laborum quisquam accusamus maiores ipsa fuga ex. Quis cum minus vitae expedita nesciunt. Sequi debitis sunt omnis consectetur ex corruptiexpedita nesciunt. Sequi debitis sunt omnis consectetur ex corrupti quibusdam odio? Mollitia, recusandae?",
+  },
+  {
+    title: "Achievements",
+    id: "4",
+    description:
+      "Lorem ipsum dolor sit amet consectetur adipisicing elit. Porro, maxime eius? Repudiandae, aut quia veniam saepe laborum quisquam accusamus maioripsum dolor sit amet consectetur adipisicing elit. Porro, maxime eius? Repudiandae, aut quia veniam saepe laborum quisquam accusamus maiores ipsa fuga ex. Quis cum minus vitae expedita nesciunt. Sequi debitis sunt omnis consectetur ex corrupties ipsa fuga ex. Quis cum minus vitae expedita nesciunt. Sequi debitis sunt omnis consectetur ex corrupti quibusdam odio? Mollitia, recusandae?",
+  },
+];
