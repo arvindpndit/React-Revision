@@ -5,7 +5,7 @@ import { useEffect, useState } from "react";
 import Shimmer from "./Shimmer";
 import useOnline from "../helper/useOnline";
 
-const Body = () => {
+const Body = ({ user }) => {
   const [showShimmer, setShowShimmer] = useState(true);
   const [newRestaurants, setNewRestaurant] = useState([]);
   const [filterRestaurantList, setFilterRestaurantList] =
@@ -53,7 +53,7 @@ const Body = () => {
           <div>no restaurant found ☹️</div>
         </div>
       ) : (
-        <RestaurantList cards={filterRestaurantList} />
+        <RestaurantList cards={filterRestaurantList} user={user} />
       )}
     </div>
   );
