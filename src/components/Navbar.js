@@ -22,6 +22,9 @@ const Navbar = () => {
           <div>
             <Link to="/contact">Contact</Link>
           </div>
+          <div>
+            <Link to="/instamart">Instamart</Link>
+          </div>
           <div>Cart</div>
           {LoggedIn ? (
             <button

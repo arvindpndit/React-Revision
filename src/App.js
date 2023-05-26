@@ -8,6 +8,7 @@ import Error from "./components/Error";
 import Contact from "./components/Contact";
 import RestaurantMenu from "./components/RestaurantMenu";
 import Shimmer from "./components/Shimmer";
+import Instamart from "./components/Instamart";
 const About = lazy(() => import("./components/About"));
 
 const root = ReactDOM.createRoot(document.querySelector("#root"));
@@ -54,6 +55,10 @@ const appRoute = createBrowserRouter([
       {
         path: "/restaurant/menu/:menuId",
         element: <RestaurantMenu />,
+      },
+      {
+        path: "/instamart",
+        element: <Instamart />,
       },
     ],
   },
