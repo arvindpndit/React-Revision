@@ -1,6 +1,6 @@
 import { RESTAURANT_IMG_CDN_LINK } from "../constants";
 import { useContext } from "react";
-import UserContext from "../helper/userContext";
+import UserContext from "../helper/UserContext";
 
 const RestaurantCard = ({ restaurant, user }) => {
   const { name, cuisines, cloudinaryImageId, costForTwoString } =

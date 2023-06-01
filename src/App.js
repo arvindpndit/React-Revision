@@ -9,7 +9,7 @@ import Contact from "./components/Contact";
 import RestaurantMenu from "./components/RestaurantMenu";
 import Shimmer from "./components/Shimmer";
 import Instamart from "./components/Instamart";
-import UserContext from "./helper/userContext";
+import UserContext from "./helper/UserContext";
 const About = lazy(() => import("./components/About"));
 
 const root = ReactDOM.createRoot(document.querySelector("#root"));
@@ -24,7 +24,12 @@ const AppLayout = () => {
   });
   return (
     <div>
-      <UserContext.Provider value={user}>
+      <UserContext.Provider
+        value={{
+          info: user.info,
+          setUser: setUser,
+        }}
+      >
         <Navbar />
         <Outlet />
         <Footer />
