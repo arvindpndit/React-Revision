@@ -1,4 +1,4 @@
-import React, { Suspense, lazy } from "react";
+import React, { Suspense, lazy, useState } from "react";
 import ReactDOM from "react-dom/client";
 import Navbar from "./components/Navbar";
 import Body from "./components/Body";
@@ -9,16 +9,26 @@ import Contact from "./components/Contact";
 import RestaurantMenu from "./components/RestaurantMenu";
 import Shimmer from "./components/Shimmer";
 import Instamart from "./components/Instamart";
+import UserContext from "./helper/userContext";
 const About = lazy(() => import("./components/About"));
 
 const root = ReactDOM.createRoot(document.querySelector("#root"));
 
 const AppLayout = () => {
+  const [user, setUser] = useState({
+    info: {
+      name: "ArvindPandit",
+      email: "arvindpandit9808@gmail.com",
+      linkedIn: "https://www.linkedin.com/in/arvindpndit/",
+    },
+  });
   return (
     <div>
-      <Navbar />
-      <Outlet />
-      <Footer />
+      <UserContext.Provider value={user}>
+        <Navbar />
+        <Outlet />
+        <Footer />
+      </UserContext.Provider>
     </div>
   );
 };
