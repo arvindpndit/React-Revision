@@ -11,6 +11,8 @@ import Shimmer from "./components/Shimmer";
 import Instamart from "./components/Instamart";
 import UserContext from "./helper/UserContext";
 const About = lazy(() => import("./components/About"));
+import { Provider } from "react-redux";
+import store from "./helper/store";
 
 const root = ReactDOM.createRoot(document.querySelector("#root"));
 
@@ -23,7 +25,7 @@ const AppLayout = () => {
     },
   });
   return (
-    <div>
+    <Provider>
       <UserContext.Provider
         value={{
           info: user.info,
@@ -34,7 +36,7 @@ const AppLayout = () => {
         <Outlet />
         <Footer />
       </UserContext.Provider>
-    </div>
+    </Provider>
   );
 };
 
