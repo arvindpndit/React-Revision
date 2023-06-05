@@ -12,6 +12,7 @@ const userLoggedIn = () => {
 
 const Navbar = () => {
   const cartItemCount = useSelector((store) => store.cart.cartItems);
+  console.log(cartItemCount);
 
   const [LoggedIn, setLoggedIn] = useState(false);
   const { info = { name: "" }, setUser } = useContext(UserContext);
