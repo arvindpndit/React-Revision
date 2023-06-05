@@ -37,7 +37,9 @@ const Navbar = () => {
           <div>
             <Link to="/instamart">Instamart</Link>
           </div>
-          <div>Cart</div>
+          <div>
+            <Link to="/cart">Cart</Link>
+          </div>
           {LoggedIn ? (
             <button
               className="px-2 py-1 bg-green-300"
