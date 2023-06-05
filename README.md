@@ -21,25 +21,25 @@ The revision is divided into several thrilling parts, each delving into a differ
 
 ### Part 1: 🎬 Trailer
 
-**Day 1:** Enter in React's World 🌍
-**Day 2:** Parcel is a beast 📦
-**Day 3:** Don't worry, Babel is here! ⚛️
-**Day 4:** Meet our Hero - JSX 😎
-**Day 5:** Build your App 🏗️
+**Day 1:** [Enter in React's World](https://github.com/arvindpndit/React-Revision/blob/master/Notes/Day1.md) 🌍<br>
+**Day 2:** [Parcel is a beast](https://github.com/arvindpndit/React-Revision/blob/master/Notes/Day2.md) 📦<br>
+**Day 3:** [Don't worry, Babel is here!](https://github.com/arvindpndit/React-Revision/blob/master/Notes/Day3.md) ⚛️<br>
+**Day 4:** [Meet our Hero - JSX](https://github.com/arvindpndit/React-Revision/blob/master/Notes/Day4.md) 😎<br>
+**Day 5:** [Build your App](https://github.com/arvindpndit/React-Revision/blob/master/Notes/Day5.md) 🏗️<br>
 
 ### Part 2: 🎢 Enjoy The Ride
 
-**Day 6:** Let's get Hooked 🔗
-**Day 7:** Exploring the world 🌎
-**Day 8:** Finding the path 🔍
-**Day 9:** Let's get classy 🎩
-**Day 10:** Optimizing our app ⚡
+**Day 6:** [Let's get Hooked](https://github.com/arvindpndit/React-Revision/blob/master/Notes/Day6.md) 🔗<br>
+**Day 7:** [Exploring the world](https://github.com/arvindpndit/React-Revision/blob/master/Notes/Day7.md) 🌎<br>
+**Day 8:** [Finding the path](https://github.com/arvindpndit/React-Revision/blob/master/Notes/Day8.md) 🔍<br>
+**Day 9:** [Let's get classy](https://github.com/arvindpndit/React-Revision/blob/master/Notes/Day9.md) 🎩<br>
+**Day 10:** [Optimizing our app](https://github.com/arvindpndit/React-Revision/blob/master/Notes/Day10.md) ⚡<br>
 
 ### Part 3: 🏆 The Endgame
 
-**Day 10:** Jo dikhta hai, wo bikta hai 📈
-**Day 10:** Data is the new oil 🛢️
-**Day 10:** Let's build our store 🏪
+**Day 11:** [Jo dikhta hai, wo bikta hai](https://github.com/arvindpndit/React-Revision/blob/master/Notes/Day11.md) 📈<br>
+**Day 12:** [Data is the new oil](https://github.com/arvindpndit/React-Revision/blob/master/Notes/Day12.md) 🛢️<br>
+**Day 13:** [Let's build our store](https://github.com/arvindpndit/React-Revision/blob/master/Notes/Day13.md) 🏪<br>
 
 ## Contributing
 
