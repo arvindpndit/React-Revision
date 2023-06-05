@@ -2,6 +2,7 @@ import { useState } from "react";
 import { Link } from "react-router-dom";
 import { useContext } from "react";
 import UserContext from "../helper/UserContext";
+import { useSelector } from "react-redux";
 
 const userLoggedIn = () => {
   //checking whether the user is logged in or not
@@ -10,6 +11,8 @@ const userLoggedIn = () => {
 };
 
 const Navbar = () => {
+  const cartItemCount = useSelector((store) => store.cart.cartItems);
+
   const [LoggedIn, setLoggedIn] = useState(false);
   const { info = { name: "" }, setUser } = useContext(UserContext);
   console.log(info);
@@ -38,7 +41,7 @@ const Navbar = () => {
             <Link to="/instamart">Instamart</Link>
           </div>
           <div>
-            <Link to="/cart">Cart</Link>
+            <Link to="/cart">Cart {cartItemCount.length}</Link>
           </div>
           {LoggedIn ? (
             <button
