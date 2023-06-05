@@ -7,7 +7,7 @@ const Cart = () => {
   const removeItemHandler = () => {
     dispatch(removeItems());
   };
-  console.log(cartItems);
+  //console.log(cartItems);
   if (cartItems.length == 0)
     return <div className="w-9/12 mx-auto min-h-screen">No Item Present</div>;
   return (
