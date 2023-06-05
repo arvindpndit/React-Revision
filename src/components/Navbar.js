@@ -12,11 +12,11 @@ const userLoggedIn = () => {
 
 const Navbar = () => {
   const cartItemCount = useSelector((store) => store.cart.cartItems);
-  console.log(cartItemCount);
+  // console.log(cartItemCount);
 
   const [LoggedIn, setLoggedIn] = useState(false);
   const { info = { name: "" }, setUser } = useContext(UserContext);
-  console.log(info);
+  // console.log(info);
   return (
     <div className="bg-green-50">
       <div className="flex justify-between items-center py-3 bg-green-50 w-9/12 mx-auto rounded-xl ">
