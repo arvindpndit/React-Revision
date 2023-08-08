@@ -4,7 +4,7 @@ Welcome to the exciting journey of revising React from the basics to advanced to
 
 ## Prerequisites
 
-Before diving into this revision, make sure you have a solid foundation in HTML, CSS, and JavaScript. Familiarity with React fundamentals like component creation, event handling, and state and props management is also necessary. 💡
+Before diving into this revision, make sure you have a solid foundation in HTML, CSS, and JavaScript. 💡
 
 ## Getting Started
 
