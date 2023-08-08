@@ -64,7 +64,7 @@ useEffect(() => {
     try {
       // We are using the fetch API to make a GET request to the specified URL.
       const data = await fetch(
-        "https://www.swiggy.com/dapi/restaurants/list/v5?lat=30.3164945&lng=78.03219179999999&page_type=DESKTOP_WEB_LISTING"
+        "https://corsproxy.io/?https://www.swiggy.com/dapi/restaurants/list/v5?lat=30.3164945&lng=78.03219179999999&page_type=DESKTOP_WEB_LISTING"
       );
       // We are converting the response to JSON format using the json() method.
       const json = await data.json();
