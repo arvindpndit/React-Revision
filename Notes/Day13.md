@@ -129,10 +129,7 @@ const Cart = () => {
 Here's a summary of the concepts covered in this revising session:
 
 - Create a Redux store with `configureStore`
-- Provide the Redux store to
-
-the React application using the `Provider` component
-
+- Provide the Redux store to the React application using the `Provider` component
 - Create a Redux state slice using `createSlice`
 - Add slice reducers to the store configuration
 - Use the `useSelector` and `useDispatch` hooks to access Redux state and dispatch actions in React components
